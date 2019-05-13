@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Author: 		 ANDINET GEBRE -->
+    <!-- Date: 			05/05/2019 -->
+    <!-- Class:			CSCI 2240 - Client Side Programming -->
+    <!-- Final-part3  -->
+    <!-- Instructor:	Darren Pearson -->
+    <meta name="author" content="Andinet">
+    <title>MyRestraunt | Welcome</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+	
+	
+	
+    <script src=".js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script src="jquery.js" type="text/javascript"></script>
+    <script src="jqFancyTransitions.js" type="text/javascript"></script>
+    <!--One page Nav-->
+    <script src="jquery.nav.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#nav').onePageNav({
+                filter: ':not(.external)',
+            });
+        });
+    </script>
+    <!--End of one page nav-->
+    <!--Photo Zoom Out Effect with jQuery: https://tympanus.net/codrops/2010/03/07/photo-zoom-out-effect-with-jquery/
+         The idea is show some images which are zoomed in initially and when hovering over an image it gets zoomed out. >
+         <!-- javascript start of gallery-->
+    <script type="text/javascript">
+        $(function() {
+            $('#container img').hover(
+                function() {
+                    var $this = $(this);
+                    $this.stop().animate({
+                        'opacity': '1.0',
+                        'height': '250px',
+                        'top': '0px',
+                        'left': '0px'
+                    });
+                },
+                function() {
+                    var $this = $(this);
+                    $this.stop().animate({
+                        'opacity': '0.5',
+                        'height': '500px',
+                        'top': '-66.5px',
+                        'left': '-150px'
+                    });
+                }
+            );
+        });
+    </script>
+    <!-- end of Gallery Javascript-->
+    <!--- start of slide show  JS -->
+    <script>
+        <!-- JQuery fancy trasitions http://workshop.rs/projects/jqfancytransitions/-->
+        $(document).ready(function() {
+
+            $('#show').jqFancyTransitions({
+                width: 1330,// width of panel
+                height: 400,
+                strips: 20,
+				stripDelay: 50, // delay beetwen strips in ms
+                direction: 'fountainAlternate',
+                delay: 10,// delay between images in ms
+				titleSpeed: 1000, // speed of title appereance in ms
+				position: 'alternate', // top, bottom, alternate, curtain
+				direction: 'fountainAlternate', // left, right, alternate, random, fountain, fountainAlternate
+				navigation: false, // prev and next navigation buttons
+				links: false // show images as links
+            });
+			
+			
+            <!--effect: '', // wave, zipper, curtain-->
+        });
+    </script>
+    <!--End of slide Show-->
+
+</head>
+
+<body >
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1 style="color:yellow;margin-left:20px;"><span class="highlight"></span> MyRestraunt </h1>
+            </div>
+            <nav>
+                <!--One page nav by using  nav id --  jQuery One Page Navigation Plugin :https://www.trevor-davis.com/blog/jquery-one-page-navigation-plugin/>-->
+                <ul id="nav">
+                    <li class="current"><a href="#container">Home</a></li>
+                    <li><a href="#container4">Gallery</a></li>
+                    <li><a href="dinoser.html">Call the Server</a></li>
+                    <li><a href="#services">Services</a></li>
+					<li><a href="https://www.trevor-davis.com/blog/jquery-one-page-navigation-plugin/">One Page Nav</a></li>
+                </ul>
+            </nav>
+            <!--end of one page nav-->
+        </div>
+    </header>
+    <div id="show">
+        <!--<img height="400px" width="100%" src="img1.jpg">-->
+		<img src="banner8.jpeg" alt="Let get the party  started " />
+		<img src="food6.jpeg" alt="great Food " />
+		<img src="party5.jpeg" alt="Party with Us " />
+		<img src="party4.jpeg" alt="great Food " />
+		<img src="food9.jpeg" alt="great Food " />
+		<img src="part3.jpeg" alt="Live Music  with Tony Hadson " />
+		<img src="banner1.jpeg" alt="great Food " />
+		<img src="banner.jpeg" alt='PAKU' />
+        <img src='food.jpeg' alt='Amazing Food' />
+		<img src='server.jpeg' alt='Servers' />
+		<img src='banner11.jpeg' alt='TAKO CHENA' />
+		<img src='banner10.jpeg' alt='Get the Party started ' />
+		<img src='banner7.jpeg' alt='Get the Party started ' />
+		<img src='partystarted.jpeg' alt='Get the Party started ' />
+		<img src='14.jpg' alt='Amazing food ' />      
+    </div>
+    <section id="newsletter">
+        <div class="container">
+            <a href="dinoser.html" style="color:white; font-size:20px;">Order online</a>
+            <form>
+                <input type="email" placeholder="Enter Email...">
+                <button type="submit" class="button_1">Subscribe</button>
+            </form>
+        </div>
+    </section>
+    <div id="boxe4">
+	
+	
+	
+	
+	<body onLoad="flipGallery()">
+	
+        <div id="boxes" style=" background-color:green; class=" quickFlip "">
+            <div class="container">
+                <h1 class="menu"> Our Menu</h1>
+                <div class="box">
+                    <img src="salad.jpg">
+                    <h3>Salad</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra </p>
+                </div>
+                <div class="box">
+                    <img src="Fried rice.jpg">
+                    <h3>Fried rice</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra </p>
+                </div>
+                <div class="box">
+                    <img src="food Desert.jpeg">
+                    <h3>Food desert</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra </p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="box">
+                    <img src="Peperoni Pizza.jpeg">
+                    <h3>Cheese Pizza</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra </p>
+                </div>
+                <div class="box">
+                    <img src="Burger.jpeg">
+                    <h3>Burger</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra </p>
+                </div>
+                <div class="box">
+                    <img src="gourmet-salad.jpeg">
+                    <h3>Gourmet-salad</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra </p>
+                </div>
+            </div>
+        </div>
+	
+        <section id="services">
+            <div class="container">
+                <article id="main-col">
+                    <h1 class="page-title">Services</h1>
+                    <ul id="services">
+                        <li>
+                            <h2 style="color:darkblue; "> Event Planning </h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies at, vulputate id lorem. Nulla facilisi.</p>
+                            <p>Pricing: $3,000 - $5,000</p>
+                        </li>
+                        <li>
+                            <h2 style="color:darkblue; ">Catering</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies at, vulputate id lorem. Nulla facilisi.</p>
+                            <p>Pricing: $250-$3000</p>
+                        </li>
+                        <li>
+                            <h2 style="color:darkblue; ">Conference Rooms Rental</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies at, vulputate id lorem. Nulla facilisi.</p>
+                            <p>Pricing: $60 per hour</p>
+                        </li>
+                    </ul>
+                </article>
+                <aside id="sidebar">
+                    <div class="dark">
+                        <h3>Order Online</h3>
+                        <form class="quote">
+                            <div>
+                                <label>Name</label>
+                                <br>
+                                <input type="text" placeholder="Name">
+                            </div>
+                            <div>
+                                <label>Email</label>
+                                <br>
+                                <input type="email" placeholder="Emial Address">
+                            </div>
+                            <div>
+                                <label>Address</label>
+                                <br>
+                                <textarea placeholder="Message"></textarea>
+                                <select>
+                                    <option value="volvo">Portobello Black Bean Taco</option>
+                                    <option value="saab">Taco Pizza</option>
+                                    <option value="opel">Tacos With Yogu</option>
+                                    <option value="audi">Steak-Tacos</option>
+                                    <option value="audi">Select</option>
+                                </select>
+                                <br>
+                                <br>
+                                <button class="button_1" type="submit">Add to cart</button>
+                            </div>
+                        </form>
+                    </div>
+                </aside>
+            </div>
+        </section>
+        <div id="container4" style="background-color:pink">
+            <h1 style="text-align:center;;font-size:40px;color:green;margin:0px;padding:10px;">MyGallery</h1>
+            <div id="container" class="container3" style="margin-top:0px;margin-left:16%;">
+                <div class="wrap1">
+                    <a href="http://www.bbc.com">
+                        <img src="Blackened Tuna Tacos.jpg" alt="Picture 1" />
+                    
+                    </a>
+                </div>
+                <div class="wrap1" style="text-align:center; color:white;font-size:46px;">
+                    <a href="http://www.flickr.com/photos/archetypefotografie/3601313864/">
+                        <img src="10.png" alt="Picture 2" />
+                  
+                    </a>
+                </div>
+                <div class="wrap1">
+                    <a href="http://www.flickr.com/photos/archetypefotografie/3601313864/">
+                        <img src="10.png" alt="Picture 3" />
+                    </a>
+                </div>
+                <div class="wrap1">
+                    <a href="http://www.flickr.com/photos/vegaseddie/3910559910/">
+                        <img src="9.jpg" alt="Picture 4" />
+                    </a>
+                </div>
+                <div class="wrap1">
+                    <a href="http://www.flickr.com/photos/62337512@N00/445175934/">
+                        <img src="8.jpeg" alt="Picture 5" />
+                    </a>
+                </div>
+                <div class="wrap1">
+                    <a href="http://www.flickr.com/photos/brunociampi/2461177417/">
+                        <img src="11.jpg" alt="Picture 6" />
+                    </a>
+                </div>
+                <div class="wrap1">
+                    <a href="http://www.flickr.com/photos/beadmobile/3298460491/">
+                        <img src="12.jpg" alt="Picture 7" />
+                    </a>
+                </div>
+                <div class="wrap1">
+                    <a href="http://www.flickr.com/photos/tonythemisfit/3839281139/">
+                        <img src="13.jpg" alt="Picture 8" />
+                    </a>
+                </div>
+            </div>
+            <div>
+                <a class="back" href="#menu"></a>
+            </div>
+        </div>
+  
+      
+		
+        <footer>
+            <p>©2019 Andinet Gebre.All Rights Reserved.</p>
+			<a  style="color:white" href="http://workshop.rs/projects/jqfancytransitions/" >Slider Source: jqFancyTransitions
+			slideshow with strip effects</a><br><br>
+			<a style="color:white" href="https://unsplash.com/" >Images  from Unsplash</a><br>
+			<a style="color:white" href="https://www.pexels.com/search/online%20shopping/" >images: taken from Pexels.com</a><br>
+			<a style="color:white" href="https://tympanus.net/codrops/2010/03/07/photo-zoom-out-effect-with-jquery/" >Gallery Jquery Source</a>
+
+        </footer>
+</body>
+
+</html>
